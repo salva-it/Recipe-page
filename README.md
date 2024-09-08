@@ -1,8 +1,8 @@
 
 ### Links
 
-- Solution URL: https://github.com/salva-it/social-links-profile-main.git
-- Live Site URL: (https://salva-it.github.io/social-links-profile-main/)
+- Solution URL: https://github.com/salva-it/Recipe-page.git
+- Live Site URL: (https://salva-it.github.io/Recipe-page/)
 
 
 ### Built with
