@@ -1,0 +1,216 @@
+:root{
+    
+--background-White:hsl(0, 0%, 100%);
+--primary-background: hsl(30, 54%, 90%);
+--Rose-background:hsl(330, 100%, 98%);
+--color-brown:   hsl(30, 10%, 34%);
+--color-head:hsl(14, 45%, 36%);
+--Stone: hsl(24, 5%, 18%);
+--LightGrey-line: hsl(30, 18%, 87%);
+--Rose:hsl(332, 51%, 32%);
+}
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, dialog, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ul{
+    list-style-position: inside;
+
+}
+.p-bold{
+    font-weight: 600;
+}
+.f-bold{
+    font-weight: 800;
+}
+/*-----------------------*/
+body{
+    background-color: var(--primary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "outfit";
+    
+    line-height: 1.5rem;
+}
+.container{
+  padding: 2.5rem;
+   margin: 4rem 0;
+   border-radius: 1.5rem;
+    background-color: var(--background-White);
+    max-width: 42rem;
+}
+.container img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.hero h1{
+    padding: 2rem 0 1rem ;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 300;
+    font-family: "Young Serif";
+   line-height: 1.75rem;
+}
+.hero p{
+    color: var(--color-brown);
+    padding: 0.5rem 0 2rem;
+    line-height: 1.75rem; 
+    font-family: "outfit";
+   
+}
+.txt-content{
+    
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  margin-block-start: 2.5rem;
+}
+.Prepration-time{
+    background-color: var(--Rose-background);
+    padding:1rem;
+    border-radius: 0.625rem;
+}
+.Prepration-time p{
+    color: var(--color-head);
+    font-size: clamp(0.658rem, 5vw, 1.25rem);
+    font-weight: 600;
+}
+h2{
+    color: var(--color-head);
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-family: "Young Serif";
+
+}
+
+.Prepration-time ul{
+    padding: 0.625rem 1.75rem;
+}
+.Prepration-time ul li{
+    padding: 0.313rem 0.75rem;
+    list-style-position: outside;
+}
+.Prepration-time li::marker{
+    font-weight: 700;
+    color:var(--color-head);
+  }
+
+.Ingredients{
+   padding-block: 1rem;
+    border-bottom: 0.063rem solid var(--LightGrey-line);
+}
+
+.Ingredients-list{
+    margin: 0.875rem 1.563rem;
+}
+.Ingredients-list li{
+    padding: 0.4rem 1rem;
+    list-style-position: outside;
+    color: var(--color-brown);
+    
+}
+.Ingredients-list li::marker{
+    color:var(--color-head);
+   
+    list-style-position: inside;
+
+}
+.Instructions{
+    padding: 1rem 0 1.875rem;
+    border-bottom: 0.063rem solid var(--LightGrey-line);
+}
+.Instructions h2{
+    padding-block: 1rem;
+
+}
+.Instructions li::marker{
+    color:var(--color-head);
+    font-weight: 700;
+
+}
+.Instructions ol{
+    padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Instructions ol li{
+    padding-left: 1.25rem;
+    color: var(--color-brown);
+}
+.nutrition{
+    padding-top: 2rem;
+}
+.nutrition table{
+    width: 100%;
+}
+.nutrition table tr th{
+    text-align: left;
+    padding-left: 3.125rem;
+    color: var(--color-brown);
+}
+.nutrition table tr td{
+    padding: 1rem 1.25rem;
+}
+.nutrition table .rose{
+    color: var(--Rose);
+}
+.nutrition table tr:not(:last-child){
+    border-bottom: 0.063rem solid var(--LightGrey-line);
+   
+}
+.nutrition p{
+    color: var(--color-brown);
+    padding-block: 1rem;
+}
+
+/*responsive code*/
+@media screen and (max-width:37.5rem){
+    .container{
+        width: auto;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .container img{
+        border-radius: 0;
+    }
+    .hero h1,.hero p{
+        padding: 1rem;
+    }
+    .hero h1{
+        font-size: clamp(2rem, 5vw, 2rem);
+        line-height: 2.5rem;
+    }
+    
+    .txt-content{
+        padding: 1rem;
+        margin-block-start: 0.313rem;
+    }
+}
